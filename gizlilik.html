@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YesSIR &amp; YesSERV - Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root { --ink:#13241D; --muted:#5E716A; --line:#DCE7E2; --green:#1A6445; --teal:#046E71; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#F2F8F5; color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  header { border-bottom:3px solid var(--green); padding-bottom:18px; margin-bottom:28px; }
+  h1 { font-size:26px; margin:0 0 6px; }
+  h2 { font-size:19px; margin:34px 0 10px; color:var(--green); }
+  h3 { font-size:16px; margin:22px 0 6px; }
+  .sub { color:var(--muted); font-size:14px; margin:0; }
+  ul { padding-left:20px; }
+  li { margin:5px 0; }
+  table { border-collapse:collapse; width:100%; margin:14px 0; font-size:14.5px; }
+  th, td { border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top; }
+  th { background:#E9F2ED; }
+  .box { background:#fff; border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:18px 0; }
+  .en { border-top:3px solid var(--teal); margin-top:56px; padding-top:22px; }
+  .en h2 { color:var(--teal); }
+  a { color:var(--teal); }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:13.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Gizlilik Politikası</h1>
+  <p class="sub">YesSIR ve YesSERV mobil uygulamaları &middot; Son güncelleme: 6 Eylül 2026</p>
+</header>
+
+<p>
+  Bu politika, Google Play'de <strong>YesSIR</strong> (servis sağlayıcı) ve
+  <strong>YesSERV</strong> (gemi kullanıcısı) adıyla yayınlanan iki mobil uygulama
+  için geçerlidir. İki uygulama aynı veritabanını paylaşır: YesSIR'de girilen gemi
+  ve ekipman bilgileri, erişimi onaylanan YesSERV kullanıcılarına görünür.
+</p>
+
+<div class="box">
+  <strong>Veri sorumlusu:</strong> Yesir Klima Teknik Sanayi Ticaret A.Ş.<br>
+  <strong>İletişim:</strong> <a href="mailto:rfq@yesir.com.tr">rfq@yesir.com.tr</a>
+</div>
+
+<h2>1. Hangi verileri topluyoruz?</h2>
+
+<table>
+  <tr><th>Veri</th><th>Neden</th><th>Zorunlu mu?</th></tr>
+  <tr><td>Ad soyad</td><td>Talebi kimin açtığının görünmesi, onay süreçleri</td><td>Evet</td></tr>
+  <tr><td>E-posta adresi</td><td>Giriş kimliği, şifre sıfırlama</td><td>Evet</td></tr>
+  <tr><td>Telefon numarası</td><td>Servis sağlayıcının WhatsApp ile ulaşabilmesi</td><td>Hayır (isteğe bağlı)</td></tr>
+  <tr><td>Şifre</td><td>Girişin doğrulanması</td><td>Evet</td></tr>
+  <tr><td>Gemi ve ekipman kayıtları</td><td>Uygulamanın asıl işlevi: bakım takibi</td><td>Evet</td></tr>
+  <tr><td>PDF ve fotoğraflar</td><td>Teknik doküman, bakım talimatı, yedek parça görseli</td><td>Hayır</td></tr>
+</table>
+
+<p>
+  Şifreniz Google Firebase Authentication tarafından karşılanır ve saklanır;
+  uygulama şifrenizi hiçbir aşamada görmez, okumaz veya kendi kayıtlarına yazmaz.
+</p>
+
+<h3>Toplamadığımız veriler</h3>
+<ul>
+  <li>Konum bilgisi &mdash; konum izni uygulamadan tamamen kaldırılmıştır.</li>
+  <li>Ses kaydı &mdash; mikrofon izni kaldırılmıştır.</li>
+  <li>Rehber, arama kaydı, SMS.</li>
+  <li>Reklam kimliği, kullanım analitiği, izleme çerezi. Uygulamada reklam yoktur.</li>
+</ul>
+
+<h2>2. Cihaz izinleri</h2>
+<ul>
+  <li><strong>Kamera</strong> &mdash; ekipman üzerindeki karekodu okutmak (YesSERV) ve
+      yedek parça fotoğrafı çekmek (YesSIR) için. İzni reddederseniz uygulamanın
+      geri kalanı çalışmaya devam eder.</li>
+  <li><strong>Fotoğraflar / dosyalar</strong> &mdash; yalnızca sizin seçtiğiniz PDF veya
+      görselin okunması için. Galeriniz taranmaz.</li>
+</ul>
+
+<h2>3. Veriler nerede saklanıyor?</h2>
+<p>
+  Veriler Google Firebase üzerinde (Authentication, Cloud Firestore, Cloud Storage)
+  <strong>Avrupa Birliği içinde (europe-west)</strong> saklanır. Aktarım TLS ile
+  şifrelenir. Erişim, sunucu tarafında çalışan güvenlik kurallarıyla sınırlanır:
+</p>
+<ul>
+  <li>Bir YesSERV kullanıcısı yalnızca erişimi onaylanmış geminin verisini görebilir.</li>
+  <li>Bir kullanıcı yalnızca kendi açtığı talebi düzenleyebilir.</li>
+  <li>Erişim iptal edildiğinde kullanıcı geminin hiçbir verisine ulaşamaz.</li>
+</ul>
+
+<h2>4. Verilerinizi kimlerle paylaşıyoruz?</h2>
+<p>
+  Verileriniz satılmaz, reklam amacıyla kullanılmaz ve üçüncü taraflara pazarlama
+  amacıyla aktarılmaz. Tek işleyici, altyapıyı sağlayan <strong>Google Firebase</strong>'dir.
+  Uygulamanın işleyişi gereği, açtığınız arıza ve yedek parça taleplerinizde adınız
+  ve iletişim bilgileriniz servis sağlayıcıya görünür.
+</p>
+
+<h2>5. Saklama süresi ve silme</h2>
+<p>
+  Hesabınızı uygulamanın içinden istediğiniz an silebilirsiniz:
+  <strong>Ayarlar &rarr; Hesabımı Sil</strong> (YesSIR) veya
+  <strong>Gemilerim ekranı &rarr; Hesabımı Sil</strong> (YesSERV).
+</p>
+<p>
+  Hesabınız silindiğinde girişiniz, adınız, e-posta ve telefon bilginiz, gemi
+  erişimleriniz ve okundu işaretleriniz kalıcı olarak silinir. Açtığınız arıza ve
+  yedek parça talepleri geminin bakım geçmişi olarak kalır, ancak üzerlerindeki ad
+  ve iletişim bilgileri silinir; kayıt artık size bağlanamaz.
+</p>
+<p>
+  Uygulamayı kaldırdıysanız veya giriş yapamıyorsanız silme talebinizi
+  <a href="hesap-silme.html">hesap silme sayfasından</a> iletebilirsiniz.
+</p>
+
+<h2>6. Haklarınız</h2>
+<p>
+  KVKK ve GDPR kapsamında verilerinize erişme, düzeltme, silme ve işlemeye itiraz
+  etme haklarına sahipsiniz. Talebinizi
+  <a href="mailto:rfq@yesir.com.tr">rfq@yesir.com.tr</a> adresine iletebilirsiniz;
+  en geç 30 gün içinde yanıtlanır.
+</p>
+
+<h2>7. Çocuklar</h2>
+<p>
+  Uygulamalar denizcilik sektöründe çalışan profesyoneller içindir; çocuklara
+  yönelik değildir ve bilerek çocuklardan veri toplamaz.
+</p>
+
+<h2>8. Değişiklikler</h2>
+<p>
+  Bu politika değişirse bu sayfa güncellenir ve yukarıdaki tarih yenilenir.
+</p>
+
+<!-- ============================ ENGLISH ============================ -->
+<div class="en">
+<h1>Privacy Policy</h1>
+<p class="sub">YesSIR and YesSERV mobile apps &middot; Last updated: 6 September 2026</p>
+
+<p>
+  This policy covers the two mobile apps published on Google Play as
+  <strong>YesSIR</strong> (service provider) and <strong>YesSERV</strong> (vessel
+  crew). Both apps share one database: the vessel and equipment records entered in
+  YesSIR are visible to YesSERV users whose access has been approved.
+</p>
+
+<div class="box">
+  <strong>Data controller:</strong> Yesir Klima Teknik Sanayi Ticaret A.Ş.<br>
+  <strong>Contact:</strong> <a href="mailto:rfq@yesir.com.tr">rfq@yesir.com.tr</a>
+</div>
+
+<h2>1. What we collect</h2>
+<table>
+  <tr><th>Data</th><th>Why</th><th>Required?</th></tr>
+  <tr><td>Full name</td><td>Showing who filed a request; approval flow</td><td>Yes</td></tr>
+  <tr><td>E-mail address</td><td>Sign-in identity, password reset</td><td>Yes</td></tr>
+  <tr><td>Phone number</td><td>So the service provider can reach you on WhatsApp</td><td>No (optional)</td></tr>
+  <tr><td>Password</td><td>Verifying sign-in</td><td>Yes</td></tr>
+  <tr><td>Vessel and equipment records</td><td>The purpose of the app: maintenance tracking</td><td>Yes</td></tr>
+  <tr><td>PDFs and photos</td><td>Technical documents, maintenance instructions, spare part images</td><td>No</td></tr>
+</table>
+<p>
+  Your password is handled and stored by Google Firebase Authentication. The app
+  never sees, reads or stores it.
+</p>
+
+<h3>What we do not collect</h3>
+<ul>
+  <li>Location &mdash; the location permission is removed from the app entirely.</li>
+  <li>Audio &mdash; the microphone permission is removed.</li>
+  <li>Contacts, call logs, SMS.</li>
+  <li>Advertising ID, usage analytics, tracking cookies. There are no ads.</li>
+</ul>
+
+<h2>2. Device permissions</h2>
+<ul>
+  <li><strong>Camera</strong> &mdash; to scan the QR label on equipment (YesSERV) and to
+      photograph spare parts (YesSIR). Declining it leaves the rest of the app working.</li>
+  <li><strong>Photos / files</strong> &mdash; only to read the PDF or image you pick
+      yourself. Your gallery is not scanned.</li>
+</ul>
+
+<h2>3. Where the data is stored</h2>
+<p>
+  Data is stored on Google Firebase (Authentication, Cloud Firestore, Cloud Storage)
+  <strong>inside the European Union (europe-west)</strong> and is encrypted in transit
+  with TLS. Access is enforced by security rules that run on the server:
+</p>
+<ul>
+  <li>A YesSERV user can only see vessels their access was approved for.</li>
+  <li>A user can only edit the requests they filed themselves.</li>
+  <li>Once access is revoked, nothing inside that vessel is reachable.</li>
+</ul>
+
+<h2>4. Sharing</h2>
+<p>
+  Your data is never sold, used for advertising, or passed to third parties for
+  marketing. The only processor is <strong>Google Firebase</strong>, which provides the
+  infrastructure. By design, the name and contact details on the fault and spare part
+  requests you file are visible to the service provider.
+</p>
+
+<h2>5. Retention and deletion</h2>
+<p>
+  You can delete your account from inside the app at any time:
+  <strong>Settings &rarr; Delete My Account</strong> (YesSIR) or
+  <strong>My Vessels &rarr; Delete My Account</strong> (YesSERV).
+</p>
+<p>
+  Deleting the account permanently removes your login, name, e-mail, phone number,
+  vessel access and read marks. The fault and spare part requests you filed remain as
+  the vessel's maintenance history, but the name and contact details on them are
+  erased, so the record can no longer be linked to you.
+</p>
+<p>
+  If you have uninstalled the app or cannot sign in, use the
+  <a href="hesap-silme.html">account deletion page</a>.
+</p>
+
+<h2>6. Your rights</h2>
+<p>
+  Under GDPR and Turkish KVKK you may access, correct, delete or object to the
+  processing of your data. Write to
+  <a href="mailto:rfq@yesir.com.tr">rfq@yesir.com.tr</a>; requests are answered
+  within 30 days.
+</p>
+
+<h2>7. Children</h2>
+<p>
+  These apps are for maritime professionals. They are not directed at children and do
+  not knowingly collect data from them.
+</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, this page is updated and the date above is revised.</p>
+</div>
+
+<footer>
+  YesSIR &amp; YesSERV &middot; <a href="hesap-silme.html">Hesap silme / Account deletion</a>
+  &middot; <a href="mailto:rfq@yesir.com.tr">rfq@yesir.com.tr</a>
+</footer>
+
+</div>
+</body>
+</html>
