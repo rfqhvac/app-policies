@@ -84,9 +84,20 @@
 
 <h2>3. Veriler nerede saklanıyor?</h2>
 <p>
-  Veriler Google Firebase üzerinde (Authentication, Cloud Firestore, Cloud Storage)
-  <strong>Avrupa Birliği içinde (europe-west)</strong> saklanır. Aktarım TLS ile
-  şifrelenir. Erişim, sunucu tarafında çalışan güvenlik kurallarıyla sınırlanır:
+  Hesap bilgileriniz ve bütün gemi, ekipman ve talep kayıtları Google Firebase
+  üzerinde (Authentication, Cloud Firestore) <strong>Avrupa Birliği içinde
+  (europe-west)</strong> saklanır.
+</p>
+<p>
+  Yüklenen dosyalar &mdash; teknik doküman ve bakım talimatı PDF'leri ile yedek parça
+  fotoğrafları &mdash; Google Cloud Storage'ın <strong>Amerika Birleşik Devletleri
+  (us-east1)</strong> bölgesindeki kovasında tutulur. Bu dosyalar ekipmana aittir;
+  kimin yüklediği bilgisi dosyanın kendisinde değil, Avrupa'daki veritabanında durur.
+  Aktarım Google Cloud'un standart sözleşme maddeleri kapsamında yapılır.
+</p>
+<p>
+  Her iki durumda da aktarım TLS ile şifrelenir ve erişim, sunucu tarafında çalışan
+  güvenlik kurallarıyla sınırlanır:
 </p>
 <ul>
   <li>Bir YesSERV kullanıcısı yalnızca erişimi onaylanmış geminin verisini görebilir.</li>
@@ -188,9 +199,20 @@
 
 <h2>3. Where the data is stored</h2>
 <p>
-  Data is stored on Google Firebase (Authentication, Cloud Firestore, Cloud Storage)
-  <strong>inside the European Union (europe-west)</strong> and is encrypted in transit
-  with TLS. Access is enforced by security rules that run on the server:
+  Your account details and every vessel, equipment and request record are stored on
+  Google Firebase (Authentication, Cloud Firestore) <strong>inside the European Union
+  (europe-west)</strong>.
+</p>
+<p>
+  Uploaded files &mdash; technical document and maintenance instruction PDFs, and spare
+  part photographs &mdash; are held in Google Cloud Storage in the <strong>United States
+  (us-east1)</strong>. These files belong to the equipment; who uploaded them is
+  recorded in the European database, not in the file itself. The transfer is covered by
+  Google Cloud's standard contractual clauses.
+</p>
+<p>
+  In both cases the data is encrypted in transit with TLS, and access is enforced by
+  security rules that run on the server:
 </p>
 <ul>
   <li>A YesSERV user can only see vessels their access was approved for.</li>
